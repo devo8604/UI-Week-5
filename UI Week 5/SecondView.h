@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondView.h
 //  UI Week 5
 //
 //  Created by Devon Smith on 6/9/13.
@@ -8,18 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SecondView : UIViewController
 {
     UILabel *label;
     UIButton *button;
-    UITextField *textfield;
 }
 
 @property (nonatomic, retain) UILabel *label;
 @property (nonatomic, retain) UIButton *button;
-@property (nonatomic, retain) UITextField *textfield;
-
-- (IBAction) buttonClicked: (id) sender;
-
 
 @end

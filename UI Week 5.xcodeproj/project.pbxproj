@@ -23,6 +23,8 @@
 		94796B411765464A005A50C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94796B1C1765464A005A50C4 /* Foundation.framework */; };
 		94796B491765464A005A50C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94796B471765464A005A50C4 /* InfoPlist.strings */; };
 		94796B4C1765464A005A50C4 /* UI_Week_5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94796B4B1765464A005A50C4 /* UI_Week_5Tests.m */; };
+		94796B57176558F2005A50C4 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94796B56176558F2005A50C4 /* SecondView.m */; };
+		94A04F7A1775859A0093FD86 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A04F791775859A0093FD86 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		94796B481765464A005A50C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94796B4A1765464A005A50C4 /* UI_Week_5Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI_Week_5Tests.h; sourceTree = "<group>"; };
 		94796B4B1765464A005A50C4 /* UI_Week_5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI_Week_5Tests.m; sourceTree = "<group>"; };
+		94796B55176558F2005A50C4 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
+		94796B56176558F2005A50C4 /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
+		94A04F791775859A0093FD86 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = "UI Week 5/Media.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,7 @@
 		94796B0E1765464A005A50C4 = {
 			isa = PBXGroup;
 			children = (
+				94A04F791775859A0093FD86 /* Media.xcassets */,
 				94796B201765464A005A50C4 /* UI Week 5 */,
 				94796B441765464A005A50C4 /* UI Week 5Tests */,
 				94796B191765464A005A50C4 /* Frameworks */,
@@ -117,9 +123,12 @@
 		94796B201765464A005A50C4 /* UI Week 5 */ = {
 			isa = PBXGroup;
 			children = (
+				94A04F78177585560093FD86 /* iPad */,
 				94796B291765464A005A50C4 /* AppDelegate.h */,
 				94796B2A1765464A005A50C4 /* AppDelegate.m */,
 				94796B321765464A005A50C4 /* MainStoryboard.storyboard */,
+				94796B55176558F2005A50C4 /* SecondView.h */,
+				94796B56176558F2005A50C4 /* SecondView.m */,
 				94796B351765464A005A50C4 /* ViewController.h */,
 				94796B361765464A005A50C4 /* ViewController.m */,
 				94796B211765464A005A50C4 /* Supporting Files */,
@@ -158,6 +167,13 @@
 				94796B471765464A005A50C4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94A04F78177585560093FD86 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +223,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Devon Smith";
+				TargetAttributes = {
+					94796B161765464A005A50C4 = {
+						DevelopmentTeam = ZT73624UR8;
+					};
+				};
 			};
 			buildConfigurationList = 94796B121765464A005A50C4 /* Build configuration list for PBXProject "UI Week 5" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -235,6 +256,7 @@
 				94796B2D1765464A005A50C4 /* Default.png in Resources */,
 				94796B2F1765464A005A50C4 /* Default@2x.png in Resources */,
 				94796B311765464A005A50C4 /* Default-568h@2x.png in Resources */,
+				94A04F7A1775859A0093FD86 /* Media.xcassets in Resources */,
 				94796B341765464A005A50C4 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +295,7 @@
 				94796B271765464A005A50C4 /* main.m in Sources */,
 				94796B2B1765464A005A50C4 /* AppDelegate.m in Sources */,
 				94796B371765464A005A50C4 /* ViewController.m in Sources */,
+				94796B57176558F2005A50C4 /* SecondView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +404,15 @@
 		94796B501765464A005A50C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Devon Smith (ZT73624UR8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UI Week 5/UI Week 5-Prefix.pch";
 				INFOPLIST_FILE = "UI Week 5/UI Week 5-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +420,16 @@
 		94796B511765464A005A50C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Devon Smith (ZT73624UR8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UI Week 5/UI Week 5-Prefix.pch";
 				INFOPLIST_FILE = "UI Week 5/UI Week 5-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -453,6 +487,7 @@
 				94796B511765464A005A50C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94796B521765464A005A50C4 /* Build configuration list for PBXNativeTarget "UI Week 5Tests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +496,7 @@
 				94796B541765464A005A50C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
